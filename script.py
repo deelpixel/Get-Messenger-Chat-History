@@ -1,6 +1,6 @@
 import facebook
 
-ACCESS_TOKEN = "<your-page-access-token>"
+ACCESS_TOKEN = "your-page-access-token"
 # PAGE_ID = "<page-id>"
 api = facebook.GraphAPI( ACCESS_TOKEN )
 args = {'fields' : 'message'}
