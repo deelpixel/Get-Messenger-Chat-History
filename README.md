@@ -18,4 +18,6 @@ https://developers.facebook.com/tools/explorer
 
 6. `source venv/bin/activate`
 
-7. `python3 script.py`
+7. `pip install -r requirements.txt`
+
+8. `python3 script.py`
