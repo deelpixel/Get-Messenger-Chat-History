@@ -12,6 +12,8 @@ https://developers.facebook.com/tools/explorer
 
 4. `git clone https://github.com/NotBot-Automation-Bots/Get-Messenger-Chat-History.git`
 
+5. `cd Get-Messenger-Chat-History`
+
 5. `python3 -m venv venv`
 
 6. `source venv/bin/activate`
