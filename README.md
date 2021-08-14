@@ -10,8 +10,10 @@ https://developers.facebook.com/tools/explorer
 
 3. Generate an _**Access Token**_ and paste it in [line 3 of scipt.py](https://github.com/NotBot-Automation-Bots/Get-Messenger-Chat-History/blob/3404def9eeee435d4e600a3feae2ebcf8699855f/script.py#L3) (replace the string **your-page-access-token** with the generated token).
 
-4. `python3 -m venv venv`
+4. `git clone https://github.com/NotBot-Automation-Bots/Get-Messenger-Chat-History.git`
 
-5. `source venv/bin/activate`
+5. `python3 -m venv venv`
 
-6. `python3 script.py`
+6. `source venv/bin/activate`
+
+7. `python3 script.py`
