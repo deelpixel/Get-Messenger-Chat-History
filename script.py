@@ -1,11 +1,20 @@
 import facebook
 
-ACCESS_TOKEN = "your-page-access-token"
-# PAGE_ID = "<page-id>"
+ACCESS_TOKEN = "ACCESS_TOKEN"
+
 api = facebook.GraphAPI( ACCESS_TOKEN )
-args = {'fields' : 'message'}
+args = {'fields' : 'from,message,created_time'}
 conv = api.get_object( 'me/conversations')
-msg = api.get_object( conv['data'][0]['id']+'/messages')
-for el in msg['data']:
-    content = api.get_object( el['id'], **args)
-    print(content)
+
+noOfChats = len(conv['data'])
+
+for i in range(0, noOfChats):
+    msg = api.get_object( conv['data'][i]['id']+'/messages')
+    for el in msg['data']:
+        content = api.get_object( el['id'], **args)
+        resp = {
+            'from': content['from']['name'],
+            'message': content['message'],
+            'created_time': content['created_time']
+        }
+        print(resp)
