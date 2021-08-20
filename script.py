@@ -1,6 +1,6 @@
 import facebook
 
-ACCESS_TOKEN = "ACCESS_TOKEN"
+ACCESS_TOKEN = "PASTE_ACCESS_TOKEN_HERE"
 
 api = facebook.GraphAPI( ACCESS_TOKEN )
 args = {'fields' : 'from,message,created_time'}

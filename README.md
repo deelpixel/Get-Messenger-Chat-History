@@ -18,6 +18,9 @@ https://developers.facebook.com/tools/explorer
 
 7. `pip install -r requirements.txt`
 
-3. Generate an _**Access Token**_ and paste it in [line 3 of scipt.py](https://github.com/NotBot-Automation-Bots/Get-Messenger-Chat-History/blob/3404def9eeee435d4e600a3feae2ebcf8699855f/script.py#L3) (replace the string **your-page-access-token** with the generated token).
+3. Generate an _**Access Token**_ and paste it in line 3 of scipt.py (replace the string **PASTE_ACCESS_TOKEN_HERE** with the generated token).
+    ```py
+    ACCESS_TOKEN = "PASTE_ACCESS_TOKEN_HERE"
+    ```
 
 8. `python3 script.py`
