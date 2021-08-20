@@ -6,7 +6,7 @@ Get Messenger Chat History
 1. Go to Facebook Graph API Explorer
 https://developers.facebook.com/tools/explorer
 
-2. Add _**pages_read_engagement**_ to the list of permissions.
+2. Add all the permissions (including _**pages_read_engagement**_) to the list of permissions.
 
 4. `git clone https://github.com/NotBot-Automation-Bots/Get-Messenger-Chat-History.git`
 
