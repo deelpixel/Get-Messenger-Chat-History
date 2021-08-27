@@ -3,7 +3,7 @@ import facebook
 ACCESS_TOKEN = "PASTE_ACCESS_TOKEN_HERE"
 
 api = facebook.GraphAPI( ACCESS_TOKEN )
-args = {'fields' : 'from,message,created_time'}
+args = {'fields' : 'from,message,created_time,to,tags'}
 conv = api.get_object( 'me/conversations')
 
 noOfChats = len(conv['data'])
@@ -15,6 +15,8 @@ for i in range(0, noOfChats):
         resp = {
             'from': content['from']['name'],
             'message': content['message'],
-            'created_time': content['created_time']
+            'created_time': content['created_time'],
+            'to':content['to'],
+            'tags':content['tags']
         }
         print(resp)
